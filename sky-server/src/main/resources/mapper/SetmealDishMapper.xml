@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sky.mapper.SetmealDishMapper">
+
+<!--    查询是否在套餐中-->
+    <select id="getsetmealIdsByDishIds" resultType="java.lang.Long">
+        select setmael_id from setmael_dish where dish_id in
+        <foreach item="dishId" collection="dishIds" separator="," open="(" close=")">
+            #{dishId}
+        </foreach>
+    </select>
+</mapper>
