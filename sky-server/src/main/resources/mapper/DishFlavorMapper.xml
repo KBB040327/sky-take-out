@@ -19,4 +19,8 @@
             #{dishId}
         </foreach>
     </delete>
+
+    <delete id="deleteByDishId">
+        delete from dish_flavor where dish_id = #{id}
+    </delete>
 </mapper>
