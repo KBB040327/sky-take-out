@@ -62,3 +62,8 @@ sky:
 #    weChatPayCertFilePath: ${sky.wechat.weChatPayCertFilePath}
     notifyUrl: ${sky.wechat.notifyUrl}
     refundNotifyUrl: ${sky.wechat.refundNotifyUrl}
+
+  shop:
+    address: "河南省郑州市惠济区河南牧业经济学院英才校区"
+  baidu:
+    ak: "uejvGMbwcmi37rdudpgeTWAMRoOTD7Iy"
