@@ -1,5 +1,9 @@
 # 苍穹外卖（sky-take-out）
 
+> 🔗 **项目地址**：https://github.com/KBB040327/sky-take-out
+>
+> 技术栈：Java 8 · SpringBoot · MyBatis · MySQL · Redis · WebSocket · Spring Task · Apache POI
+
 一个餐饮外卖平台的后端系统，分为**管理端**（商家/员工使用）和**用户端**（顾客点餐使用）两套接口。
 
 > **项目说明**：本项目参考开源教程《苍穹外卖》实现，主要用于系统学习 SpringBoot 企业级开发的完整流程（分层架构、AOP、缓存、消息推送、定时任务、第三方支付对接等）。
