@@ -4,3 +4,7 @@
 *.class
 *Test.java
 **/test/
+# 部署配置（含密码，不进版本库）
+deploy/.env
+deploy/*.jar
+

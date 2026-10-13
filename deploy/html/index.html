@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>苍穹外卖 · 部署成功</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, "Microsoft YaHei", sans-serif;
+      background: linear-gradient(135deg, #1f4e79 0%, #2d7dd2 100%);
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      color: #fff; padding: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.10);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 18px; padding: 44px 40px; max-width: 620px; width: 100%;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.28);
+    }
+    h1 { font-size: 26px; margin-bottom: 8px; }
+    .sub { opacity: .82; font-size: 14px; margin-bottom: 26px; }
+    .row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 11px 0; border-bottom: 1px solid rgba(255,255,255,0.14); font-size: 14px;
+    }
+    .row:last-of-type { border-bottom: none; }
+    .k { opacity: .75; }
+    .v { font-weight: 600; }
+    .ok { color: #7ee787; }
+    .links { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+    a {
+      flex: 1; min-width: 150px; text-align: center; padding: 12px 18px;
+      background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 10px; color: #fff; text-decoration: none; font-size: 14px;
+      transition: .18s;
+    }
+    a:hover { background: rgba(255,255,255,0.3); }
+    .foot { margin-top: 24px; font-size: 12px; opacity: .6; line-height: 1.7; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🍜 苍穹外卖 部署成功</h1>
+    <p class="sub">sky-take-out · 多容器部署演示</p>
+
+    <div class="row"><span class="k">部署方式</span><span class="v">Docker Compose</span></div>
+    <div class="row"><span class="k">容器编队</span><span class="v">nginx + app + mysql + redis</span></div>
+    <div class="row"><span class="k">运行环境</span><span class="v">openEuler 24.03 LTS</span></div>
+    <div class="row"><span class="k">JDK</span><span class="v">17</span></div>
+    <div class="row"><span class="k">状态</span><span class="v ok">● 运行中</span></div>
+
+    <div class="links">
+      <a href="/doc.html">接口文档</a>
+    </div>
+
+    <p class="foot">
+      这个页面由 Nginx 容器提供，接口请求经 Nginx 反向代理到 SpringBoot 容器。<br>
+      MySQL 与 Redis 通过 Docker 内部网络以服务名互访，对外只暴露 80 端口。
+    </p>
+  </div>
+</body>
+</html>
